@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         // Задание 1
         byte  b = 1;  System.out.println("Переменная b = " + b);
-        short s = 2;  System.out.println("Переменная s = " + s);;
+        short s = 2;  System.out.println("Переменная s = " + s);
         int   i = 3;  System.out.println("Переменная i = " + i);
         long  l = 4L; System.out.println("Переменная l = " + l);
 
@@ -16,19 +16,19 @@ public class Main {
         float firstBoxerWeight = 78.2f;
         float secondBoxerWeight = 82.7f;
         float totalBoxersWeight = firstBoxerWeight + secondBoxerWeight;
-        System.out.println("Общий вес бойцов: " + totalBoxersWeight + " кг!");
+        System.out.println("Общий вес бойцов: " + totalBoxersWeight + " кг");
         float diffBoxersWeight = secondBoxerWeight - firstBoxerWeight;
-        System.out.println("Разница в весе бойцов: " + diffBoxersWeight + " кг!");
+        System.out.println("Разница в весе бойцов: " + diffBoxersWeight + " кг");
 
         //Задание 3
         int banana = 5;
         float bananaWeight = 80f;
         int milk = 200;
-        float milkWeight = (float) (105 / 100) ;
+        float milkWeight = 105f / 100f ;
         int iceCream = 2;
         float iceCreamWeight = 100f;
         int egg = 4;
-        float eggWeight = 70;
+        float eggWeight = 70f;
         float totalWeightInGrammas = banana*bananaWeight + milk*milkWeight +
                 iceCream*iceCreamWeight + egg*eggWeight;
         float totalWeightInKilogrammas = totalWeightInGrammas / 1000;
@@ -41,7 +41,7 @@ public class Main {
         int diff2_OfWeightLoss = 500;
         int days1 = (weightLossInKg*1000) / diff1_OfWeightLoss;
         int days2 = (weightLossInKg*1000) / diff2_OfWeightLoss;
-        float days3 = (days1 + days2) / 2;
+        float days3 = (float)((days1 + days2) / 2);
         System.out.println("Если худеть по 250гр, то нужно дней: " + days1 +
                 "\nЕсли худеть по 500гр, то нужно дней: " + days2 +
                 "\nЕсли худеть в среднем, то нужно дней: " + days3);
