@@ -1,16 +1,14 @@
 public class Main {
     public static void main(String[] args) {
         // Задание 1
-        byte  b = 1;  System.out.println("Переменная b = " + b);
-        short s = 2;  System.out.println("Переменная s = " + s);
-        int   i = 3;  System.out.println("Переменная i = " + i);
-        long  l = 4L; System.out.println("Переменная l = " + l);
-
-        float f = 5.0f; System.out.println("Переменная f = " + f);
-        double d = 6;   System.out.println("Переменная d = " + d);
-
-        char  c = 35;  System.out.println("Переменная c = " + c);
-        boolean o = false; System.out.println("Переменная o = " + o);
+        byte  bv = 1;
+        short sv = 2;
+        int   iv = 3;
+        long  lv = 4L;
+        float fv = 5f;
+        double dv = 6;
+        char  cv = 35;
+        boolean ov = false;
 
         //Задание 2
         float firstBoxerWeight = 78.2f;
@@ -63,5 +61,30 @@ public class Main {
                 " рублей. Годовой доход вырос на " + DenisDiffSalary + " рублей.");
         System.out.println("Кристина теперь получает " + KristinaNewSalary +
                 " рублей. Годовой доход вырос на " + KristinaDiffSalary + " рублей.");
+
+        //Задание 6
+        int a = 12;
+        int b = 27;
+        int c = 44;
+        int d = 15;
+        int e = 9;
+        int result = a * (b + (c - d * e));
+        result *= (-1);
+        System.out.println("Переменная result равна " + result);
+
+        //Задание 7
+        int as =5;
+        int bs =7;
+        as = as + bs;
+        bs = as - bs;
+        as = as - bs;
+        System.out.println("as=" + as + " bs=" + bs);
+
+        //Задание 8
+        int ae = 775;
+        ae = ae % 100;
+        int aes = ae % 10;
+        ae = (ae - aes) / 10;
+        System.out.println("ae=" + ae);
     }
 }
